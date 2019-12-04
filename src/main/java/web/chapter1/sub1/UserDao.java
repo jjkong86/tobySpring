@@ -1,4 +1,4 @@
-package web.chapter1.dao;
+package web.chapter1.sub1;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,12 +1,13 @@
-package web.chapter1.dao;
+package web.chapter1.sub5;
 
 import java.sql.SQLException;
 
+import web.chapter1.sub5.UserDao;
 import web.model.User;
 
 public class Test {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
-		UserDao dao = new UserDao();
+		UserDao dao = new UserDao(new CountingConnectionMaker(new SimpleConnectionMaker()));
 		
 		User user = new User();
 		String id = "jj";
