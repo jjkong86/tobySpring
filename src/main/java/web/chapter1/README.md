@@ -16,3 +16,4 @@
  * 그러나 userDao에서 객체를 생성하기 위해서 구현체의 이름이 들어가야함
  * Connection c = new DConnection();
 
+5) userDao에서 클라이언트로 부터 넘어온(부여된) connection을 사용하게함(DI)
