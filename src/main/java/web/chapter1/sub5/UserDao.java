@@ -11,9 +11,10 @@ import web.model.User;
 public class UserDao {
 
 	ConnectionMaker c;
-	
+
 	public void add(User user) throws ClassNotFoundException, SQLException {
-		try (PreparedStatement ps = c.makeConnection().prepareStatement("insert into users(id, name, password) values (?, ?, ?)")) {
+		try (PreparedStatement ps = c.makeConnection()
+				.prepareStatement("insert into users(id, name, password) values (?, ?, ?)")) {
 			ps.setString(1, user.getId());
 			ps.setString(2, user.getName());
 			ps.setString(3, user.getPassword());

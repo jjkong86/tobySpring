@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 import lombok.AllArgsConstructor;
 
-@Component
 @AllArgsConstructor
 public class CountingConnectionMaker implements ConnectionMaker {
 	private int counter = 0;
